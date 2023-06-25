@@ -3,17 +3,44 @@ body {
   margin: 0;
 }
 
-.header {
+.header, .front-banner {
   display: flex;
   background-color: #1F2937;
   justify-content: space-around;
   align-items: center;
 }
 
+.heading, .hero-main {
+  color: #F9FAF8;
+  margin: 0;
+}
+
+li, .hero-second {
+  color: #E5E7EB;
+}
+
+.hero-main {
+  font-size: 48px;
+  font-weight: 800;
+}
+
 .heading {
-  font-weight: bold;
   font-size: 24px;
-  color: #F9FAF8
+  font-weight: bold;
+}
+
+.hero-second, .front-button {
+  font-size: 18px;
+}
+
+.front-button {
+  background-color: #3882F6;
+  color: #E5E7EB;
+  padding: 10px 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
 }
 
 ul {
@@ -25,5 +52,4 @@ ul {
 li {
   list-style-type: none;
   font-size: 18px;
-  color: #E5E7EB;
 }
