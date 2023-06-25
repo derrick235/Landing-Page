@@ -6,8 +6,25 @@ body {
 .header, .front-banner {
   display: flex;
   background-color: #1F2937;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.header {
+  padding: 0px 200px;
+}
+
+.front-banner {
+  gap: 50px;
+  padding: 150px 200px;
+}
+
+.left-front {
+  flex: 0 1 auto;
+}
+
+.right-front {
+  flex: 0 0 auto;
 }
 
 .heading, .hero-main {
