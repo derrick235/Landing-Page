@@ -3,8 +3,13 @@ body {
   margin: 0;
 }
 
-.header, .front-banner {
+/* CONTAINERS FOR FLEX */
+
+.header, .front-banner, .random-info, .album, .picture {
   display: flex;
+}
+
+.header, .front-banner {
   background-color: #1F2937;
   justify-content: space-between;
   align-items: center;
@@ -17,6 +22,12 @@ body {
 .front-banner {
   gap: 50px;
   padding: 150px 200px;
+}
+
+.random-info, .picture {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-front {
@@ -32,6 +43,32 @@ body {
   margin: 0;
 }
 
+.album {
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+/* HEADING */
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+  
+li {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+/* HERO SECTION */
+
 li, .hero-second {
   color: #E5E7EB;
 }
@@ -41,12 +78,7 @@ li, .hero-second {
   font-weight: 800;
 }
 
-.heading {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.hero-second, .front-button {
+.hero-second, .front-button, .caption {
   font-size: 18px;
 }
 
@@ -60,13 +92,26 @@ li, .hero-second {
   border-radius: 10px;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
+/* RANDOM INFO SECTION */
+
+.info-header {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1F2937;
 }
 
-li {
-  list-style-type: none;
-  font-size: 18px;
+.pic {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+}
+
+.caption {
+  text-align: center;
+  width: 175px;
+}
+
+.random-info {
+  padding: 50px 0px;
+  gap: 30px;
 }
