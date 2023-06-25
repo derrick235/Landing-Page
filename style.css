@@ -5,7 +5,7 @@ body {
 
 /* CONTAINERS FOR FLEX */
 
-.header, .front-banner, .random-info, .album, .picture, .quote-section, .quote, .author, .call-to-action, .call-info {
+.header, .front-banner, .random-info, .album, .picture, .quote-section, .quote, .author, .call-to-action, .call-info, .footer {
   display: flex;
 }
 
@@ -176,4 +176,15 @@ li, .hero-second {
   background-color: #3882F6;
   border: 2px solid white;
   flex-shrink: 0;
+}
+
+/* FOOTER */
+
+.footer {
+  justify-content: center;
+  align-items: center;
+  background-color: #1F2937;
+  color: #F9FAF8;
+  padding: 40px 0px;
+  font-size: 18px;
 }
