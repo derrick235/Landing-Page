@@ -5,7 +5,7 @@ body {
 
 /* CONTAINERS FOR FLEX */
 
-.header, .front-banner, .random-info, .album, .picture, .quote-section, .quote, .author {
+.header, .front-banner, .random-info, .album, .picture, .quote-section, .quote, .author, .call-to-action, .call-info {
   display: flex;
 }
 
@@ -43,10 +43,14 @@ body {
   margin: 0;
 }
 
-.album {
+.album, .call-to-action {
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+
+.call-info {
+  flex-direction: column;
 }
 
 /* HEADING */
@@ -78,18 +82,21 @@ li, .hero-second {
   font-weight: 800;
 }
 
-.hero-second, .front-button, .caption {
+.hero-second, .front-button, .caption, .call-caption {
   font-size: 18px;
 }
 
-.front-button {
-  background-color: #3882F6;
+.front-button, .call-button {
   color: #E5E7EB;
   padding: 10px 35px;
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  border: none;
   border-radius: 10px;
+}
+
+.front-button {
+  background-color: #3882F6;
+  border: none;
 }
 
 /* RANDOM INFO SECTION */
@@ -139,4 +146,34 @@ li, .hero-second {
   font-size: 24px;
   justify-content: flex-end;
   margin: 0;
+}
+
+/* CALL TO ACTION SECTION */
+
+.call-to-action {
+  background-color: #3882F6;
+  margin: 50px 200px;
+  padding: 50px 100px;
+  border-radius: 10px;
+}
+
+.call-info {
+  color: #E5E7EB;
+}
+
+.call-heading {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0px;
+}
+
+.call-caption {
+  margin: 0px;
+  font-weight: 300;
+}
+
+.call-button {
+  background-color: #3882F6;
+  border: 2px solid white;
+  flex-shrink: 0;
 }
